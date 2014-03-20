@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ACS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/ACS.res" /d "_DEBUG" /d "_AFXDLL" "F:\7000m‘ÿ»À«±ÀÆ∆˜\code\ACS\512x512\ACS.rc"" 
+Creating temporary file "C:\Users\ThinkPad\AppData\Local\Temp\RSPA70D.tmp" with contents
+[
+wd_utils.lib ImageProc.lib MFSKConv.lib ws2_32.lib MPSKTurbo.lib .\CxImage\lib\Jpeg.lib .\CxImage\lib\cximage.lib libjasper.lib HYUtil.lib Shlwapi.lib /nologo /stack:0x200000 /subsystem:windows /incremental:yes /pdb:"Debug/ACS.pdb" /debug /machine:I386 /nodefaultlib:"library" /out:"Debug/ACS.exe" /pdbtype:sept 
+".\Debug\ACS.obj"
+".\Debug\ACSDlg.obj"
+".\Debug\AdcpPage.obj"
+".\Debug\ADSamplePage.obj"
+".\Debug\AdvancedSet.obj"
+".\Debug\BasicSet.obj"
+".\Debug\BmpToJp2.obj"
+".\Debug\Check.obj"
+".\Debug\CheckUSBL.obj"
+".\Debug\ComParam.obj"
+".\Debug\DataEncode.obj"
+".\Debug\DataView.obj"
+".\Debug\DIB.obj"
+".\Debug\DispPanel.obj"
+".\Debug\FFT.obj"
+".\Debug\FileDataN.obj"
+".\Debug\font.obj"
+".\Debug\ImageSelect.obj"
+".\Debug\ImageShow.obj"
+".\Debug\LogView.obj"
+".\Debug\lpt_lib.obj"
+".\Debug\MediaChannel.obj"
+".\Debug\Morse.obj"
+".\Debug\NetSocket.obj"
+".\Debug\ntgraph.obj"
+".\Debug\OptionSet.obj"
+".\Debug\picture.obj"
+".\Debug\PictureView.obj"
+".\Debug\PlayMMSound.obj"
+".\Debug\PlaySound.obj"
+".\Debug\PostView.obj"
+".\Debug\ReadUSBL.obj"
+".\Debug\ReadUSBLBOX.obj"
+".\Debug\RecordSound.obj"
+".\Debug\rs_erasure.obj"
+".\Debug\ShowPic.obj"
+".\Debug\StaticTime.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TabLog.obj"
+".\Debug\TurboCode.obj"
+".\Debug\VideoContainer.obj"
+".\Debug\VideoSelect.obj"
+".\Debug\VideoWindow.obj"
+".\Debug\WaveView.obj"
+".\Debug\WordDialog.obj"
+".\Debug\WriteSoundFile.obj"
+".\Debug\ACS.res"
+]
+Creating command line "link.exe @C:\Users\ThinkPad\AppData\Local\Temp\RSPA70D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+   Creating library Debug/ACS.lib and object Debug/ACS.exp
+
+
+
+<h3>Results</h3>
+ACS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

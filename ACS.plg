@@ -1,0 +1,128 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ACS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ThinkPad\AppData\Local\Temp\RSP62CB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /I ".\CxImage\header" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fr"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\7000mÔØÈËÇ±Ë®Æ÷\code\ACS\ReadUSBLBOX.cpp"
+]
+Creating command line "cl.exe @C:\Users\ThinkPad\AppData\Local\Temp\RSP62CB.tmp" 
+Creating temporary file "C:\Users\ThinkPad\AppData\Local\Temp\RSP62CC.tmp" with contents
+[
+wd_utils.lib ImageProc.lib MFSKConv.lib ws2_32.lib MPSKTurbo.lib .\CxImage\lib\Jpeg.lib .\CxImage\lib\cximage.lib HYUtil.lib Shlwapi.lib /nologo /stack:0x200000 /subsystem:windows /incremental:yes /pdb:"Debug/ACS.pdb" /debug /machine:I386 /nodefaultlib:"library" /out:"Debug/ACS.exe" /pdbtype:sept 
+".\Debug\ACS.obj"
+".\Debug\ACSDlg.obj"
+".\Debug\AdcpPage.obj"
+".\Debug\ADSamplePage.obj"
+".\Debug\AdvancedSet.obj"
+".\Debug\BasicSet.obj"
+".\Debug\Check.obj"
+".\Debug\CheckUSBL.obj"
+".\Debug\ComParam.obj"
+".\Debug\DataEncode.obj"
+".\Debug\DataView.obj"
+".\Debug\DIB.obj"
+".\Debug\DispPanel.obj"
+".\Debug\FFT.obj"
+".\Debug\FileDataN.obj"
+".\Debug\font.obj"
+".\Debug\ImageSelect.obj"
+".\Debug\ImageShow.obj"
+".\Debug\LogView.obj"
+".\Debug\lpt_lib.obj"
+".\Debug\MediaChannel.obj"
+".\Debug\Morse.obj"
+".\Debug\NetSocket.obj"
+".\Debug\ntgraph.obj"
+".\Debug\OptionSet.obj"
+".\Debug\picture.obj"
+".\Debug\PictureView.obj"
+".\Debug\PlayMMSound.obj"
+".\Debug\PlaySound.obj"
+".\Debug\PostView.obj"
+".\Debug\ReadUSBL.obj"
+".\Debug\ReadUSBLBOX.obj"
+".\Debug\RecordSound.obj"
+".\Debug\StaticTime.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TabLog.obj"
+".\Debug\TurboCode.obj"
+".\Debug\VideoContainer.obj"
+".\Debug\VideoSelect.obj"
+".\Debug\VideoWindow.obj"
+".\Debug\WaveView.obj"
+".\Debug\WordDialog.obj"
+".\Debug\WriteSoundFile.obj"
+".\Debug\ACS.res"
+]
+Creating command line "link.exe @C:\Users\ThinkPad\AppData\Local\Temp\RSP62CC.tmp"
+<h3>Output Window</h3>
+Compiling...
+ReadUSBLBOX.cpp
+f:\7000mÔØÈËÇ±Ë®Æ÷\code\acs\readusblbox.cpp(101) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+f:\7000mÔØÈËÇ±Ë®Æ÷\code\acs\readusblbox.cpp(110) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+f:\7000mÔØÈËÇ±Ë®Æ÷\code\acs\readusblbox.cpp(119) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+f:\7000mÔØÈËÇ±Ë®Æ÷\code\acs\readusblbox.cpp(128) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Linking...
+Creating temporary file "C:\Users\ThinkPad\AppData\Local\Temp\RSP6A7B.tmp" with contents
+[
+/nologo /o"Debug/ACS.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\ACS.sbr"
+".\Debug\ACSDlg.sbr"
+".\Debug\AdcpPage.sbr"
+".\Debug\ADSamplePage.sbr"
+".\Debug\AdvancedSet.sbr"
+".\Debug\BasicSet.sbr"
+".\Debug\Check.sbr"
+".\Debug\CheckUSBL.sbr"
+".\Debug\ComParam.sbr"
+".\Debug\DataEncode.sbr"
+".\Debug\DataView.sbr"
+".\Debug\DIB.sbr"
+".\Debug\DispPanel.sbr"
+".\Debug\FFT.sbr"
+".\Debug\FileDataN.sbr"
+".\Debug\font.sbr"
+".\Debug\ImageSelect.sbr"
+".\Debug\ImageShow.sbr"
+".\Debug\LogView.sbr"
+".\Debug\lpt_lib.sbr"
+".\Debug\MediaChannel.sbr"
+".\Debug\Morse.sbr"
+".\Debug\NetSocket.sbr"
+".\Debug\ntgraph.sbr"
+".\Debug\OptionSet.sbr"
+".\Debug\picture.sbr"
+".\Debug\PictureView.sbr"
+".\Debug\PlayMMSound.sbr"
+".\Debug\PlaySound.sbr"
+".\Debug\PostView.sbr"
+".\Debug\ReadUSBL.sbr"
+".\Debug\ReadUSBLBOX.sbr"
+".\Debug\RecordSound.sbr"
+".\Debug\StaticTime.sbr"
+".\Debug\TabLog.sbr"
+".\Debug\TurboCode.sbr"
+".\Debug\VideoContainer.sbr"
+".\Debug\VideoSelect.sbr"
+".\Debug\VideoWindow.sbr"
+".\Debug\WaveView.sbr"
+".\Debug\WordDialog.sbr"
+".\Debug\WriteSoundFile.sbr"]
+Creating command line "bscmake.exe @C:\Users\ThinkPad\AppData\Local\Temp\RSP6A7B.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ACS.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

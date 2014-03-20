@@ -1,0 +1,847 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ACS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ACS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ACS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,13,20,20
+    LTEXT           "ACS 水声通信程序",IDC_STATIC,40,11,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,26,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ACS_DIALOG DIALOGEX 0, 0, 643, 510
+STYLE DS_ABSALIGN | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "载人潜器声学通信-中国科学院声学研究所"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始录音",IDC_BUTTON1,413,4,33,16,NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_LOG,464,362,169,143,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "水声电话选择",IDC_STATIC,7,32,48,8
+    COMBOBOX        IDC_COMBO_XMT,58,31,26,61,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "启动通信机",IDC_BUTTON_START,2,4,55,19,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "系统设置",IDC_OPEN_OPTION,173,4,55,19,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_LIST_ADCP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,325,373,116,130,WS_EX_TRANSPARENT
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",WS_TABSTOP,2,71,280,267
+    PUSHBUTTON      "通信参数",IDC_ADVANCED,59,4,55,19,0,WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,288,65,161,191,BS_CENTER
+    CONTROL         "Slider1",IDC_SLIDER_AMP,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | WS_TABSTOP,176,29,58,15
+    LTEXT           "发射幅度",IDC_STATIC,137,33,35,8
+    LTEXT           "Static",IDC_STATIC_AMP,238,33,33,8
+    GROUPBOX        "扩频通信",IDC_STATIC,288,257,161,80,BS_CENTER
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,456,6,1,345
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,2,350,450,1
+    PUSHBUTTON      "AD采集",IDC_ADSAMPLE,116,4,55,19,0,WS_EX_STATICEDGE
+    LTEXT           "Static",IDC_IMAGE,469,9,151,155,0,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "系统记录",IDC_LOG,230,4,55,19,0,WS_EX_STATICEDGE
+    GROUPBOX        "ADCP数据(cm)",IDC_STATIC,316,358,134,150,BS_CENTER
+    GROUPBOX        "吊舱状态数据",IDC_STATIC,2,358,187,149,BS_CENTER
+    PUSHBUTTON      "收到",IDC_BUTTON3,304,90,56,16,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "询问情况",IDC_BUTTON4,304,124,56,16,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "一切正常",IDC_BUTTON5,381,90,56,16,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "完成阶段工作",IDC_BUTTON6,381,124,56,16,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "同意",IDC_BUTTON7,304,156,56,16,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "请求上浮",IDC_BUTTON8,381,156,56,16,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "立即上浮",IDC_BUTTON9,304,187,56,16,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "进入应急程序",IDC_BUTTON10,381,187,56,16,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "不同意",IDC_BUTTON11,304,219,56,16,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "释放应急浮标",IDC_BUTTON12,381,219,56,16,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "母船",IDC_STATIC,324,77,19,8
+    LTEXT           "潜器",IDC_STATIC,401,77,18,8
+    CTEXT           "●●●",IDC_STATIC,319,111,26,8
+    CTEXT           "●●",IDC_STATIC,316,145,31,8
+    CTEXT           "●●   ●●",IDC_STATIC,304,176,55,8
+    CTEXT           "●●●●●",IDC_STATIC,309,208,48,8
+    CTEXT           "●●●  ●●●",IDC_STATIC,304,240,57,8
+    CTEXT           "●●●",IDC_STATIC,398,111,24,8
+    CTEXT           "●●",IDC_STATIC,381,145,55,8
+    CTEXT           "●●   ●●",IDC_STATIC,381,176,56,8
+    CTEXT           "●●●●●",IDC_STATIC,381,208,56,8
+    CTEXT           "●●  ●●  ●●",IDC_STATIC,378,240,63,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,369,73,1,177
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,456,351,1,153
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,452,350,182,1
+    LTEXT           "图像接收时间",IDC_STATIC,469,168,50,8
+    LTEXT           "号换能器",IDC_STATIC,91,33,35,8
+    PUSHBUTTON      "扩频发射",IDC_FH_SEND,403,313,39,18,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_FHLOG,294,270,150,36,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_FHWORD,295,313,101,18,ES_AUTOHSCROLL
+    LTEXT           "数字发送选择",IDC_STATIC,7,51,47,8
+    COMBOBOX        IDC_COMBO_DIGITCHNNL,58,50,26,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "号换能器",IDC_STATIC,91,52,35,8
+    CONTROL         "Slider1",IDC_SLIDER_DIGITALAMP,"msctls_trackbar32",
+                    TBS_TOP | TBS_NOTICKS | WS_TABSTOP,176,49,58,15
+    LTEXT           "发射幅度",IDC_STATIC,137,53,35,8
+    LTEXT           "Static",IDC_STATIC_DIGITALAMP,238,53,33,8
+    CONTROL         "数据",IDC_RADIO_MFSK,"Button",BS_AUTORADIOBUTTON,295,44,
+                    29,10
+    CONTROL         "图像",IDC_RADIO_MPSK,"Button",BS_AUTORADIOBUTTON,378,45,
+                    30,10
+    RTEXT           "+5V电源电压",IDC_STATIC,5,377,50,8
+    RTEXT           "+12V电源电压",IDC_STATIC,5,397,50,8
+    RTEXT           "接收机板1温度",IDC_STATIC,6,417,50,8
+    RTEXT           "发射机板温度",IDC_STATIC,6,437,50,8
+    RTEXT           "5V电源板温度",IDC_STATIC,6,457,50,8
+    RTEXT           "3.3V电源板温度",IDC_STATIC,3,477,53,8
+    RTEXT           "-5V电源电压",IDC_STATIC,97,377,52,8
+    RTEXT           "-12V电源电压",IDC_STATIC,97,397,52,8
+    RTEXT           "接收机板2温度",IDC_STATIC,97,417,52,8
+    RTEXT           "收发转换板温度",IDC_STATIC,97,437,52,8
+    RTEXT           "数字基板温度",IDC_STATIC,97,457,52,8
+    RTEXT           "24V电源板温度",IDC_STATIC,97,477,52,8
+    LTEXT           "---",IDC_STATIC_p5,63,377,33,8
+    LTEXT           "---",IDC_STATIC_p12,63,397,33,8
+    LTEXT           "---",IDC_STATIC_r1,63,417,29,8
+    LTEXT           "---",IDC_STATIC_send,63,437,29,8
+    LTEXT           "---",IDC_STATIC_5t,63,457,29,8
+    LTEXT           "---",IDC_STATIC_33t,63,477,33,8
+    LTEXT           "---",IDC_STATIC_n5,155,377,27,8
+    LTEXT           "---",IDC_STATIC_n12,155,397,27,8
+    LTEXT           "---",IDC_STATIC_r2,155,417,27,8
+    LTEXT           "---",IDC_STATIC_sw,155,437,27,8
+    LTEXT           "---",IDC_STATIC_BASE,155,457,27,8
+    LTEXT           "---",IDC_STATIC_24t,155,477,27,8
+    LTEXT           "Static",IDC_PIC_RECVTIME,521,168,45,8
+    PUSHBUTTON      "主动发射数据",IDC_ENFORCE_SEND,325,42,49,16
+    CONTROL         "Progress9",IDC_PROGRESS9,"msctls_progress32",WS_BORDER,
+                    309,7,103,13
+    LTEXT           "V",IDC_STATIC,243,510,8,8
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",
+                    PBS_VERTICAL | PBS_SMOOTH | WS_BORDER,213,388,7,108
+    CONTROL         "Progress1",IDC_PROGRESS2,"msctls_progress32",
+                    PBS_VERTICAL | PBS_SMOOTH | WS_BORDER,240,388,7,108
+    CONTROL         "Progress1",IDC_PROGRESS3,"msctls_progress32",
+                    PBS_VERTICAL | PBS_SMOOTH | WS_BORDER,265,388,7,108
+    CONTROL         "Progress1",IDC_PROGRESS4,"msctls_progress32",
+                    PBS_VERTICAL | PBS_SMOOTH | WS_BORDER,292,388,7,108
+    LTEXT           "------",IDC_CH1,207,370,18,8
+    LTEXT           "------",IDC_CH2,233,370,18,8
+    LTEXT           "------",IDC_CH3,259,370,18,8
+    LTEXT           "------",IDC_CH4,285,370,18,8
+    GROUPBOX        "选择通信模式",IDC_STATIC,288,27,159,36,BS_CENTER
+    PUSHBUTTON      "生成文件",IDC_BUTTON13,282,333,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "处理数据",IDC_BUTTON14,337,334,50,14,NOT WS_VISIBLE
+    GROUPBOX        "潜器状态数据",IDC_STATIC,464,188,167,149,BS_CENTER
+    LTEXT           "CO2 浓度",IDC_STATIC,550,217,35,8
+    LTEXT           "环境水温",IDC_STATIC,550,243,35,8
+    LTEXT           "舱内湿度",IDC_STATIC,469,295,35,8
+    LTEXT           "------",IDC_MARINE_TEMP,589,243,25,8
+    LTEXT           "------",IDC_MARINE_HUMID,503,295,25,8
+    LTEXT           "------",IDC_CO2,589,217,25,8
+    LTEXT           "氧气浓度",IDC_STATIC,469,320,35,8
+    LTEXT           "舱内温度",IDC_STATIC,469,269,35,8
+    LTEXT           "------",IDC_MARINE_O2,503,320,25,8
+    LTEXT           "------",IDC_MARINE_TEMPINSIDE,503,269,25,8
+    LTEXT           "%",IDC_STATIC,622,218,8,8
+    LTEXT           "℃",IDC_STATIC,619,243,14,8
+    LTEXT           "%",IDC_STATIC,533,321,8,8
+    LTEXT           "℃",IDC_STATIC,533,269,13,8
+    LTEXT           "舱内压力",IDC_STATIC,550,269,31,8
+    LTEXT           "------",IDC_MARINE_PRESSURE,589,269,25,8
+    LTEXT           "kPa",IDC_STATIC,618,269,12,8
+    LTEXT           "主电池电压",IDC_STATIC,550,320,38,8
+    LTEXT           "主电池电流",IDC_STATIC,550,295,38,8
+    LTEXT           "------",IDC_MAIN_V,589,320,25,8
+    LTEXT           "------",IDC_MAIN_I,589,295,25,8
+    LTEXT           "A",IDC_STATIC,620,295,8,8
+    LTEXT           "%",IDC_STATIC,533,295,12,8
+    LTEXT           "潜器深度",IDC_STATIC,469,217,31,8
+    LTEXT           "潜器高度",IDC_STATIC,469,243,31,8
+    LTEXT           "------",IDC_MARINE_DEPTH,503,217,28,8
+    LTEXT           "------",IDC_MARINE_HEIGTH,503,243,28,8
+    LTEXT           "m",IDC_STATIC,533,216,8,8
+    LTEXT           "m",IDC_STATIC,533,243,8,8
+    LTEXT           "V",IDC_STATIC,620,320,8,8
+    LTEXT           "Static",IDC_ADCP_UPDATETIME,469,199,70,8
+    GROUPBOX        "通道相关系数及幅度",IDC_STATIC,194,358,121,150,
+                    BS_CENTER
+    CONTROL         "8psk",IDC_CHECKPSK,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,408,44,32,10
+    CONTROL         "",IDC_BUTTON_LED,"Button",BS_OWNERDRAW,289,5,17,14
+END
+
+IDD_DIALOG_WORD DIALOGEX 0, 0, 282, 256
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "加入发射链表",ID_AddToList,202,207,58,37,NOT WS_VISIBLE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "立即发射",ID_Send,193,182,58,14,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_INPUT,14,206,254,36,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_WORDLOG,14,12,255,188,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_NOHIDESEL | WS_VSCROLL,
+                    WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_COMPARAM DIALOG DISCARDABLE  0, 0, 331, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "通信参数"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List2",IDC_PARAMLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,317,75
+    EDITTEXT        IDC_GAIN,45,93,40,14,ES_AUTOHSCROLL
+    LTEXT           "调整增益",IDC_STATIC,10,95,31,8
+    PUSHBUTTON      "确定",IDC_BUTTON_SETGAIN,90,93,50,14
+    LTEXT           "通信距离：",IDC_STATIC,176,95,38,8
+    LTEXT           "----",IDC_STATIC_DISTANCE,219,95,40,8
+    LTEXT           "吊舱姿态：",IDC_STATIC,10,115,38,8
+    LTEXT           "横倾",IDC_STATIC,57,115,16,8
+    LTEXT           "------",IDC_BIN_ROLL,82,115,40,8
+    LTEXT           "纵倾",IDC_STATIC,132,115,16,8
+    LTEXT           "------",IDC_BIN_PITCH,159,115,59,8
+END
+
+IDD_PICTURE DIALOG DISCARDABLE  0, 0, 280, 256
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "选择本地图片",IDC_SELECTPIC,89,197,50,21
+    GROUPBOX        "当前选择发送的图片",IDC_STATIC,17,8,238,216,BS_CENTER
+    PUSHBUTTON      "获取视频图片",IDC_BUTTON_SELECT,143,197,50,21
+END
+
+IDD_DIALOG_POSTVIEW DIALOG DISCARDABLE  0, 0, 280, 256
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "",IDC_NTGRAPHCTRL1,
+                    "{C9FE01C2-2746-479B-96AB-E0BE9931B018}",WS_TABSTOP,0,0,
+                    278,205
+    CONTROL         "",IDC_ZOOMOUT,"Button",BS_OWNERDRAW | WS_TABSTOP,18,220,
+                    19,14
+    CONTROL         "",IDC_ZOOMIN,"Button",BS_OWNERDRAW | WS_TABSTOP,45,220,
+                    18,14
+    PUSHBUTTON      "保存视图",IDC_SavePic,215,220,50,14
+    PUSHBUTTON      "俯视",IDC_LOOK_DOWN,81,220,50,14
+    PUSHBUTTON      "平视",IDC_LOOK_FLAT,142,220,50,14
+END
+
+IDD_DIALOG_DATA DIALOG DISCARDABLE  0, 0, 280, 256
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "宋体"
+BEGIN
+    LTEXT           "数据更新时间：",IDC_STATIC,15,14,61,9
+    CONTROL         "",IDC_HEAD,"Static",SS_GRAYFRAME,216,28,49,14
+    LTEXT           "艏向角",IDC_STATIC,184,31,27,9
+    LTEXT           "Static",IDC_UpdateTime,77,13,89,9
+    LTEXT           "潜器坐标：",IDC_STATIC,15,32,40,9
+    LTEXT           "横倾角",IDC_STATIC,184,62,27,9
+    LTEXT           "纵倾角",IDC_STATIC,184,98,27,9
+    LTEXT           "相对距离：",IDC_STATIC,15,64,39,9
+    CONTROL         "",IDC_PITCH,"Static",SS_GRAYFRAME,216,95,49,14
+    CONTROL         "",IDC_ROLL,"Static",SS_GRAYFRAME,216,59,49,14
+    CONTROL         "",IDC_UWVLONG,"Static",SS_GRAYFRAME,71,29,49,14
+    CONTROL         "",IDC_UWVLAT,"Static",SS_GRAYFRAME,133,29,49,14
+    CONTROL         "",IDC_DISTANCEX,"Static",SS_GRAYFRAME,71,61,49,14
+    CONTROL         "",IDC_DISTANCEY,"Static",SS_GRAYFRAME,133,61,49,14
+    LTEXT           "X",IDC_STATIC,60,64,8,9
+    LTEXT           "Y",IDC_STATIC,124,64,8,9
+    LTEXT           "E",IDC_STATIC_UWVLONG,59,31,8,9
+    LTEXT           "N",IDC_STATIC_UWVLAT,123,31,8,9
+    GROUPBOX        "避碰数据",IDC_STATIC,2,132,274,113,BS_CENTER
+    LTEXT           "正前",IDC_STATIC,14,201,18,8
+    LTEXT           "前下",IDC_STATIC,14,177,18,8
+    LTEXT           "前上",IDC_STATIC,14,225,18,8
+    LTEXT           "左侧",IDC_STATIC,98,174,18,8
+    LTEXT           "右侧",IDC_STATIC,98,198,18,8
+    LTEXT           "正下",IDC_STATIC,98,222,18,8
+    LTEXT           "后下",IDC_STATIC,187,177,18,8
+    CONTROL         "",IDC_FRONT,"Static",SS_GRAYFRAME,38,195,49,14
+    CONTROL         "",IDC_FRONTDOWN,"Static",SS_GRAYFRAME,38,171,49,14
+    CONTROL         "",IDC_FRONTUP,"Static",SS_GRAYFRAME,38,219,49,14
+    CONTROL         "",IDC_LEFT,"Static",SS_GRAYFRAME,122,169,49,14
+    CONTROL         "",IDC_RIGHT,"Static",SS_GRAYFRAME,122,193,49,14
+    CONTROL         "",IDC_DOWN,"Static",SS_GRAYFRAME,122,218,49,14
+    CONTROL         "",IDC_BACKDOWN,"Static",SS_GRAYFRAME,208,171,49,14
+    LTEXT           "数据更新时间：",IDC_STATIC,14,151,61,9
+    GROUPBOX        "位姿数据",IDC_STATIC,2,3,274,124,BS_CENTER
+    LTEXT           "Static",IDC_BPUpdateTime,77,150,101,8
+    LTEXT           "深度：",IDC_STATIC,16,98,24,8
+    LTEXT           "高度:",IDC_STATIC,105,99,21,8
+    CONTROL         "",IDC_UWVDEEP,"Static",SS_GRAYFRAME,45,95,49,14
+    CONTROL         "",IDC_UWVHEIGTH,"Static",SS_GRAYFRAME,134,95,49,14
+END
+
+IDD_DIALOG_WAVEVIEW DIALOG DISCARDABLE  0, 0, 280, 256
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,164,226,
+                    22,14
+    PUSHBUTTON      "保存图片",IDC_SavPic,230,224,50,14,NOT WS_VISIBLE
+    CONTROL         "Button1",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    0,0,277,220
+    CONTROL         "",IDC_WAVEZOOMIN,"Button",BS_OWNERDRAW | WS_TABSTOP,121,
+                    226,22,14
+    CONTROL         "",IDC_WAVEZOOMOUT,"Button",BS_OWNERDRAW | WS_TABSTOP,78,
+                    226,22,14
+END
+
+IDD_DIALOG_ADCP DIALOGEX 0, 0, 299, 248
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "ADCP"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Button1",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    3,2,292,81
+    CONTROL         "Button1",IDC_BUTTON2,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    3,83,292,81
+    CONTROL         "Button1",IDC_BUTTON3,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    3,164,292,81
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 369, 237
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统设置"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "另存为",IDC_SAVEAS,262,220,50,14
+    PUSHBUTTON      "导入",IDC_LOAD,210,220,50,14
+    CONTROL         "高级选项",IDC_ADVANCED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,258,208,43,10
+    CONTROL         "基本选项",IDC_BASIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,211,208,43,10
+    DEFPUSHBUTTON   "保存",IDC_SAVE,312,220,50,14
+    PUSHBUTTON      "远程关机",IDC_BUTTON1,157,220,50,14
+    PUSHBUTTON      "远程校时",IDC_SetTime,55,220,50,14
+    PUSHBUTTON      "ADIO复位",IDC_RESETADIO,4,220,50,14
+    PUSHBUTTON      "断开连接",IDC_DiSCONNECT,106,220,50,14
+END
+
+IDD_DIALOG_LOG DIALOGEX 0, 0, 215, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "系统log"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,201,224,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DIALOG_AD DIALOG DISCARDABLE  0, 0, 507, 356
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AD采集"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "增益",IDC_STATIC,7,9,18,8
+    LTEXT           "采样率",IDC_STATIC,73,9,27,8
+    EDITTEXT        IDC_GAIN,28,6,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SAMPLE_RATE,103,6,40,14,ES_AUTOHSCROLL
+    LTEXT           "K",IDC_STATIC,148,8,8,8
+    PUSHBUTTON      "开始采集",IDC_ADSTART,165,6,50,14
+    CONTROL         "Button2",IDC_adview3,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    0,192,506,81
+    CONTROL         "Button2",IDC_adview2,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    0,108,506,81
+    CONTROL         "Button2",IDC_adview1,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    0,25,506,81
+    CONTROL         "Button2",IDC_adview4,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    0,273,506,81
+    PUSHBUTTON      "AD回放",IDC_ADREPLAY,424,7,50,14
+END
+
+IDD_BASIC DIALOG DISCARDABLE  0, 0, 359, 200
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "工作模式",IDC_STATIC,3,0,205,106,BS_CENTER
+    GROUPBOX        "AGC参数",IDC_STATIC,215,0,135,79,BS_CENTER
+    GROUPBOX        "接收参数",IDC_STATIC,215,79,135,120,BS_CENTER
+    GROUPBOX        "发射参数",IDC_STATIC,3,134,205,65,BS_CENTER
+    LTEXT           "工作方式",IDC_STATIC,11,13,32,8
+    COMBOBOX        IDC_SysWorkMode,47,12,54,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "主从模式",IDC_STATIC,107,13,36,8
+    COMBOBOX        IDC_ADIOWorkMode,146,12,54,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "同步时钟脉冲周期",IDC_STATIC,100,47,64,8
+    EDITTEXT        IDC_SyncConcurrence,170,46,19,12,ES_AUTOHSCROLL
+    LTEXT           "秒",IDC_STATIC,191,48,8,8
+    CONTROL         "TCM2工作",IDC_IsTCM2Work,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,48,49,10
+    LTEXT           "分段Hilb截断长度",IDC_STATIC,101,31,64,8
+    EDITTEXT        IDC_DiscardLen,170,28,26,12,ES_AUTOHSCROLL
+    CONTROL         "ADIO回传AD数据",IDC_IsSendADIOData,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,31,71,10
+    GROUPBOX        "DSP回传",IDC_STATIC,5,59,200,42,BS_CENTER
+    CONTROL         "判决前数据",IDC_BeforeDecideData,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,72,60,10
+    CONTROL         "判决后数据",IDC_AfterDecideData,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,77,72,57,10
+    CONTROL         "判决后比特流",IDC_AfterDecideBit,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,72,61,10
+    CONTROL         "权系数调整因子",IDC_ParamFactor,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,87,67,10
+    CONTROL         "相位调整因子",IDC_PhaseFactor,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,77,86,58,10
+    CONTROL         "多普勒频移因子",IDC_DopplerFactor,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,86,64,10
+    LTEXT           "工作方式",IDC_STATIC,220,11,32,8
+    COMBOBOX        IDC_IsAGCWork,255,10,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "同通道1",IDC_SAMETOGAIN1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,307,10,36,10
+    LTEXT           "通道1",IDC_STATIC,221,31,23,8
+    LTEXT           "通道3",IDC_STATIC,221,48,23,8
+    LTEXT           "通道5",IDC_STATIC,221,64,23,8
+    LTEXT           "通道2",IDC_STATIC,285,31,23,8
+    LTEXT           "通道4",IDC_STATIC,285,48,23,8
+    LTEXT           "通道6",IDC_STATIC,285,64,23,8
+    EDITTEXT        IDC_Gain1,247,29,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Gain2,309,29,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Gain3,247,46,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Gain4,309,46,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Gain5,247,62,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Gain6,309,62,36,12,ES_AUTOHSCROLL
+    CONTROL         "ADIO",IDC_ADIOID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,115,31,10
+    CONTROL         "D01",IDC_DSP01ID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    59,115,25,10
+    CONTROL         "D02",IDC_DSP02ID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    96,115,25,10
+    CONTROL         "D11",IDC_DSP11ID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    133,115,25,10
+    CONTROL         "D12",IDC_DSP12ID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    171,115,25,10
+    LTEXT           "信号幅度比例",IDC_STATIC,6,145,48,8
+    EDITTEXT        IDC_XMTAmpValue,55,143,35,12,ES_AUTOHSCROLL
+    LTEXT           "采样频率",IDC_STATIC,8,181,38,8
+    EDITTEXT        IDC_XMTSampleRate,51,180,40,12,ES_AUTOHSCROLL
+    LTEXT           "发射延迟",IDC_STATIC,8,163,39,8
+    EDITTEXT        IDC_XMTDelayToSync,51,161,40,12,ES_AUTOHSCROLL
+    LTEXT           "MFSK",IDC_STATIC,109,163,20,8
+    EDITTEXT        IDC_MFSK_PACKET,144,161,21,12,ES_AUTOHSCROLL
+    LTEXT           "MPSK",IDC_STATIC,109,181,20,8
+    EDITTEXT        IDC_MPSK_PACKET,144,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFSK_FRAMENUM,179,161,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MPSK_FRAMENUM,179,180,21,12,ES_AUTOHSCROLL
+    GROUPBOX        "加载控制",IDC_STATIC,3,106,205,22,BS_CENTER
+    GROUPBOX        "接收通道",IDC_STATIC,224,86,111,29
+    LTEXT           "采样通道数",IDC_STATIC,229,118,35,8
+    EDITTEXT        IDC_RecChannelNum,268,116,40,12,ES_AUTOHSCROLL
+    LTEXT           "采样频率",IDC_STATIC,229,147,35,8
+    EDITTEXT        IDC_RecvSampleRate,268,145,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,92,163,13,8
+    LTEXT           "Hz",IDC_STATIC,309,146,10,8
+    LTEXT           "采样延迟",IDC_STATIC,229,133,35,8
+    EDITTEXT        IDC_RECVDELAYSYNC,268,130,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,309,132,12,8
+    LTEXT           "Hz",IDC_STATIC,92,182,10,8
+    CONTROL         "1",IDC_Chann1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,234,
+                    94,20,10
+    CONTROL         "2",IDC_Chann2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,271,
+                    94,20,10
+    CONTROL         "3",IDC_Chann3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,306,
+                    94,20,10
+    CONTROL         "4",IDC_Chann4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,234,
+                    103,20,10
+    CONTROL         "5",IDC_Chann5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,271,
+                    103,20,10
+    CONTROL         "6",IDC_Chann6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,306,
+                    103,20,10
+    LTEXT           "MFSK",IDC_STATIC,232,171,20,8
+    LTEXT           "MPSK",IDC_STATIC,232,187,20,8
+    EDITTEXT        IDC_MFSK_RECVPACKET,268,170,21,12,ES_AUTOHSCROLL
+    LTEXT           "包数",IDC_STATIC,269,160,18,8
+    LTEXT           "帧数",IDC_STATIC,310,160,18,8
+    EDITTEXT        IDC_MPSK_RECVPACKET,268,186,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MFSK_RECVFRAMENUM,309,170,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MPSK_RECVFRAMENUM,309,186,21,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,105,155,99,22
+    GROUPBOX        "",IDC_STATIC,105,174,99,22
+    LTEXT           "包数",IDC_STATIC,145,148,18,8
+    LTEXT           "帧数",IDC_STATIC,181,148,18,8
+END
+
+IDD_ADVANCED DIALOG DISCARDABLE  0, 0, 359, 200
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "MPSK参数",IDC_STATIC,5,0,206,60,BS_CENTER
+    GROUPBOX        "Chirp参数",IDC_STATIC,5,124,101,74,BS_CENTER
+    GROUPBOX        "MFSK参数",IDC_STATIC,5,60,206,64,BS_CENTER
+    GROUPBOX        "均衡器参数",IDC_STATIC,219,0,139,135,BS_CENTER
+    GROUPBOX        "Turbo参数",IDC_STATIC,110,124,102,74,BS_CENTER
+    GROUPBOX        "其他参数",IDC_STATIC,219,137,139,61,BS_CENTER
+    LTEXT           "前保护间隔",IDC_STATIC,8,13,41,8
+    LTEXT           "后保护间隔",IDC_STATIC,109,13,41,8
+    EDITTEXT        IDC_MPSKPreGuardLag,51,12,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,95,13,11,8
+    EDITTEXT        IDC_MPSKAftGuardLag,151,12,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,194,13,11,8
+    LTEXT           "训练序列符号数",IDC_STATIC,95,28,53,8
+    EDITTEXT        IDC_MPSKTrainSymbolNum,151,27,40,12,ES_AUTOHSCROLL
+    LTEXT           "数据符号数",IDC_STATIC,8,28,41,8
+    EDITTEXT        IDC_MPSKDataSymbolNum,51,27,40,12,ES_AUTOHSCROLL
+    LTEXT           "前保护间隔",IDC_STATIC,8,73,44,8
+    LTEXT           "后保护间隔",IDC_STATIC,112,73,40,8
+    EDITTEXT        IDC_MFSKPreGuardLag,57,72,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,100,73,11,8
+    EDITTEXT        IDC_MFSKAftGuardLag,154,72,40,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,196,73,11,8
+    LTEXT           "码元间隔长度",IDC_STATIC,103,91,49,8
+    EDITTEXT        IDC_MFSKInterGuardLag,154,89,40,12,ES_AUTOHSCROLL
+    LTEXT           "数据符号数",IDC_STATIC,8,90,42,8
+    EDITTEXT        IDC_MFSKataSymbolNum,57,88,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ChirpLen,50,140,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ChirpStartF,50,159,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ChirpStopF,50,178,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InterLeaverLen,165,140,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BeltaMu,298,87,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IterationNum,165,178,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PreFilterTap,298,12,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MuMin,298,57,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SlideWinLen,165,159,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AlfaPhase,298,72,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AftFilterTap,298,27,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MuMax,298,42,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GamaMax,298,102,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GamaMin,298,117,40,12,ES_AUTOHSCROLL
+    LTEXT           "长度",IDC_STATIC,8,143,27,8
+    LTEXT           "起始频率",IDC_STATIC,8,161,38,8
+    LTEXT           "终止频率",IDC_STATIC,8,179,36,8
+    LTEXT           "点",IDC_STATIC,93,145,8,8
+    LTEXT           "Hz",IDC_STATIC,92,161,10,8
+    LTEXT           "Hz",IDC_STATIC,92,177,10,8
+    LTEXT           "交织长度",IDC_STATIC,114,143,40,8
+    LTEXT           "滑动窗长度",IDC_STATIC,114,161,41,8
+    LTEXT           "最大迭代次数",IDC_STATIC,114,179,50,8
+    LTEXT           "前馈阶数",IDC_STATIC,243,14,42,8
+    LTEXT           "反馈阶数",IDC_STATIC,243,29,40,8
+    LTEXT           "步长因子上界",IDC_STATIC,243,44,54,8
+    LTEXT           "步长因子下界",IDC_STATIC,243,60,53,8
+    LTEXT           "相位调整常数",IDC_STATIC,243,76,54,8
+    LTEXT           "步长调整常数",IDC_STATIC,243,90,54,8
+    LTEXT           "相位因子上界",IDC_STATIC,243,105,53,8
+    LTEXT           "相位因子下界",IDC_STATIC,243,119,53,8
+    LTEXT           "反Chirp间隔",IDC_STATIC,7,44,45,8
+    EDITTEXT        IDC_MPSK_chirp_inter,53,41,40,14,ES_AUTOHSCROLL
+    LTEXT           "反Chirp间隔",IDC_STATIC,8,107,44,8
+    EDITTEXT        IDC_MFSK_chirp_inter,57,104,40,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,95,44,11,8
+    LTEXT           "ms",IDC_STATIC,99,108,11,8
+    LTEXT           "循环前缀",IDC_STATIC,112,107,35,8
+    EDITTEXT        IDC_cycle_prefix,153,105,40,12,ES_AUTOHSCROLL
+    CONTROL         "超短基线同步钟控制",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,233,151,88,10
+END
+
+IDD_DIALOG_Tablog DIALOGEX 0, 0, 245, 203
+STYLE WS_CHILD | WS_BORDER
+FONT 16, "楷体_GB2312"
+BEGIN
+    EDITTEXT        IDC_EDIT1,0,0,243,201,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_EDITPIC DIALOGEX 0, 0, 387, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像编辑框"
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,331,191,50,14
+    PUSHBUTTON      "取消",IDCANCEL,331,217,50,14
+    GROUPBOX        "",IDC_STATIC,0,0,252,231,0,WS_EX_DLGMODALFRAME
+    LTEXT           "圈选需要发送的图像区域",IDC_STATIC,65,194,89,8
+    GROUPBOX        "",IDC_STATIC,252,0,131,134,0,WS_EX_DLGMODALFRAME
+    LTEXT           "待发送的图像区域",IDC_STATIC,283,142,69,8
+    LTEXT           "点击空白处取消选取框",IDC_STATIC,69,206,88,15
+END
+
+IDD_DIALOG_VIDEO DIALOG DISCARDABLE  0, 0, 369, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "视频采集"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "抓屏",IDOK,312,192,50,14
+    PUSHBUTTON      "取消",IDCANCEL,312,208,50,14
+    CONTROL         "",IDC_STATIC_VIDEO,"Static",SS_GRAYRECT,7,7,302,215
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,4,0
+ PRODUCTVERSION 1,0,4,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "2010海试版\0"
+            VALUE "CompanyName", "中科院声学所\0"
+            VALUE "FileDescription", "水声通信应用程序\0"
+            VALUE "FileVersion", "1, 0, 4, 0\0"
+            VALUE "InternalName", "ACS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ACS.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ACS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 4, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ACS_DIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 4
+    END
+
+    IDD_DIALOG_Tablog, DIALOG
+    BEGIN
+        RIGHTMARGIN, 243
+    END
+
+    IDD_DIALOG_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_expand              BITMAP  DISCARDABLE     "res\\expand.bmp"
+IDB_Chart               BITMAP  DISCARDABLE     "res\\chart.bmp"
+IDB_POST                BITMAP  DISCARDABLE     "res\\post.bmp"
+IDB_ZOOMOUT             BITMAP  DISCARDABLE     "res\\zoomout.bmp"
+IDB_ZOOMIN              BITMAP  DISCARDABLE     "res\\zoomin.bmp"
+IDB_PLAY                BITMAP  DISCARDABLE     "res\\play.bmp"
+IDB_pause               BITMAP  DISCARDABLE     "res\\pause.bmp"
+IDB_ON                  BITMAP  DISCARDABLE     "res\\On.bmp"
+IDB_OFF                 BITMAP  DISCARDABLE     "res\\Off.bmp"
+IDB_WORk                BITMAP  DISCARDABLE     "res\\workon.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_POSTVIEW DLGINIT
+BEGIN
+    IDC_NTGRAPHCTRL1, 0x376, 356, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x3255, 0x0000, 0x226b, 0x0000, 0x00c2, 
+0x0000, 0x4e0c, 0x4754, 0x6172, 0x6870, 0x7443, 0x6c72, 0x0131, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0000, 0xff00, 0xffff, 0xc000, 0xc0c0, 0xff00, 
+0xe1e4, 0x0000, 0x0000, 0xd200, 0x8cb4, 0x0300, 0x0000, 0x0200, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0xff00, 0xffff, 
+0x0200, 0x6725, 0x2502, 0x0067, 0x0000, 0x0000, 0x0100, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0900, 
+0x6c45, 0x6d65, 0x6e65, 0x2d74, 0x0030, 0x0000, 0x0000, 0xffff, 0x00ff, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0101, 
+0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 
+0x0086, 0x9000, 0x4401, 0x0142, 0x0800, 0xa2ce, 0xedc8, 0xc5d1, 0xdaba, 
+0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 
+0x0086, 0xbc00, 0xc002, 0x01d4, 0x0800, 0xa2ce, 0xedc8, 0xc5d1, 0xdaba, 
+0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 
+0x0086, 0x9000, 0xdc01, 0x017c, 0x0800, 0xa2ce, 0xedc8, 0xc5d1, 0xdaba, 
+0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 
+0x0086, 0x9000, 0x4401, 0x0142, 0x0800, 0xa2ce, 0xedc8, 0xc5d1, 0xdaba, 
+0x0400, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x6c51, 
+0x0074, 0x0000, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_BASIC DLGINIT
+BEGIN
+    IDC_SysWorkMode, 0x403, 12, 0
+0xa330, 0xd5ba, 0xb3fd, 0xb9a3, 0xd7a4, 0x00f7, 
+    IDC_SysWorkMode, 0x403, 12, 0
+0xa331, 0xb5ba, 0xcaf7, 0xd7d4, 0xccb4, 0x00ac, 
+    IDC_SysWorkMode, 0x403, 12, 0
+0xa332, 0xb7ba, 0xd5c2, 0xc4e6, 0xcaa3, 0x00bd, 
+    IDC_ADIOWorkMode, 0x403, 8, 0
+0xa330, 0xd6ba, 0xbbf7, 0x00fa, 
+    IDC_ADIOWorkMode, 0x403, 8, 0
+0xa331, 0xb4ba, 0xbbd3, 0x00fa, 
+    IDC_IsAGCWork, 0x403, 11, 0
+0x3a30, 0xccb9, 0xa8b6, 0xf6d4, 0xe6d2, "\000" 
+    IDC_IsAGCWork, 0x403, 11, 0
+0x3a31, 0xd4d7, 0xafb6, 0xf6d4, 0xe6d2, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\XpStyle"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ACS(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STARTSYS             "连接吊舱，开始通信"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ACS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
