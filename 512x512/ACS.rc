@@ -80,7 +80,7 @@ FONT 9, "宋体"
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,13,20,20
     LTEXT           "ACS 水声通信程序",IDC_STATIC,40,11,119,8,SS_NOPREFIX
-    LTEXT           "版权所有 (C) 2013太平洋",IDC_STATIC,40,26,119,8
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,26,119,8
     DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
 END
 
@@ -88,7 +88,7 @@ IDD_ACS_DIALOG DIALOGEX 0, 0, 643, 510
 STYLE DS_ABSALIGN | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | 
     WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
-CAPTION "载人潜器声学通信-中国科学院声学研究所（2013）"
+CAPTION "载人潜器声学通信-中国科学院声学研究所（2014）"
 FONT 10, "宋体"
 BEGIN
     PUSHBUTTON      "开始录音",IDC_BUTTON1,413,4,33,16,NOT WS_TABSTOP,
@@ -671,8 +671,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,4,0
- PRODUCTVERSION 1,0,4,0
+ FILEVERSION 1,0,4,1
+ PRODUCTVERSION 1,0,4,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -687,17 +687,17 @@ BEGIN
     BEGIN
         BLOCK "080404b0"
         BEGIN
-            VALUE "Comments", "2010海试版\0"
+            VALUE "Comments", "2014海试版\0"
             VALUE "CompanyName", "中科院声学所\0"
             VALUE "FileDescription", "水声通信应用程序\0"
-            VALUE "FileVersion", "1, 0, 4, 0\0"
+            VALUE "FileVersion", "1, 0, 4, 1\0"
             VALUE "InternalName", "ACS\0"
-            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "ACS.EXE\0"
             VALUE "PrivateBuild", "\0"
             VALUE "ProductName", "ACS 应用程序\0"
-            VALUE "ProductVersion", "1, 0, 4, 0\0"
+            VALUE "ProductVersion", "1, 0, 4, 1\0"
             VALUE "SpecialBuild", "\0"
         END
     END

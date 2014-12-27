@@ -107,7 +107,7 @@ void CReadUSBLBOX::GetThePost(CString Data,float &Lat, float &Long)
 		else
 		{
 			str = GetData(Data,7,',');
-			Lat =atof(str.Mid(0,2))*60 - atof(str.Mid(2,8));
+			Lat =0-atof(str.Mid(0,2))*60 - atof(str.Mid(2,8));
 			if( Lat < -90.1*60)
 			{
 				Lat =0 ;
